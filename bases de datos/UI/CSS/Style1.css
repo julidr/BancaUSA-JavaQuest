@@ -1,0 +1,101 @@
+
+div#head{
+	background-image: url('../Img/Banner.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 150px;
+}
+
+div#container{
+	width: 58%;
+	margin: auto;
+}
+
+div#menu
+{
+	padding: 5px;
+}
+img#icons
+{
+	width: 16px;
+}
+li#clockbox
+{
+	  padding-top: 10px;
+  float: right;
+}
+div#contenido{
+	text-align: center;
+}
+div#info {
+	text-align: center;
+	padding-bottom: 20px;
+	padding-left: 10px;
+    padding-right: 40px;
+}
+div#izq {
+	float: left;
+	width: 70%;
+	min-width: 180px;
+}
+div#der {
+	float: right;
+	width: 28%;
+	min-width: 180px;
+}
+div#inicioS {
+	border-radius: 5px;
+	background-color: #246DFF;
+	box-shadow: 2px 2px 4px #000000;
+}
+label#sesion
+{
+	font-size: 20px;
+	color: white;
+}
+div#izq2
+{
+	float: left;
+	  width: 225px;
+}
+form#formCrearClie
+{
+	padding-left: 10px;
+}
+#documento{
+	width: 150px;
+}
+div#informacion{
+	border-style: solid;
+	border-collapse: collapse;
+	border-width: thin;
+}
+
+div#tablaCuentas table thead tr th{
+	text-align: center;
+}
+
+div#tablaDetalle table thead tr th {
+	text-align: center;
+}
+div#tablaDetalle2 table thead tr th{
+	text-align: center;
+}
+div#informacionPerfil{
+	float: left;
+}
+
+div#cambioClave{
+	float: right;
+}
+#copyR{
+	text-align: center !important;
+}
+
+div#informacionPerfil{
+	text-align: left;
+}
+
+#resumenTr{
+	font-size: 13px;
+}

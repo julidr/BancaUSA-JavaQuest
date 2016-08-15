@@ -1,0 +1,117 @@
+<html>
+<head>
+
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+  <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+  <script type="text/javascript" src="ui/js/java.js"></script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	<META NAME="Author" CONTENT="P. Steven Puerto Montaño, Juliana Diaz, Felix Moreno">
+	<title>BancaUSA.com</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="ui/CSS/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="ui/CSS/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="ui/js/bootstrap.min.js"></script>
+
+  <!--Icono-->
+  <link rel="SHORTCUT ICON" href="ui\Img\Pestaña.png">
+
+  <!--estilo-->
+  <link rel="stylesheet" type= "text/css" href="ui\CSS\Style2.css">
+  <script type="text/javascript" src="ui/JS/clock.js"></script>
+</head>
+<body>	
+  <div id = "head">
+    </div>
+
+    <div id = "menu">
+      <ul class="nav nav-pills">
+          <li role="presentation" class="active"><a href="crearCredito.html"><img src="ui/Img/createMoney.png" id="icons">&nbsp Solicitud de Credito</a></li>
+          <li role="presentation"><a href="indexAdmin.html"><img src="ui/Img/volver.png" id="icons">&nbsp Volver</a></li>
+          <li role="presentation" id="clockbox"></li>
+      </ul>
+    </div>
+	<div id = "container">
+	<div id="contenido">
+		<div id="der2.1">
+			<br>
+         <h3 id="titulo">Solicitud de Credito</h3>
+         <h4 id="titulo2">Aqui se generan los creditos</h4>
+         <br>
+         <fieldset id="crearCredito">
+         <form id="formCrearCredi" name="formCrearCredi"role="form" method="Post" action="UI/php/crear credito.php">
+          <fieldset>
+            <legend>Credito</legend>
+    			   <label id="lc" >Numero de Cuenta:</label>
+   				   <input class="form-control" name="numeroCuenta" id="numeroCuenta" placeholder="Ex: 1026293165">
+             <br>
+    			   <label id="labels">Tipo de Credito:</label>
+              <select class="form-control" id="tipoCredito" name="tipoCredito">
+              <option value="1">Tarjeta</option>
+              <option value="2">Prestamo</option>
+              </select>
+             <br>
+             <label id="labels">Numero Tarjeta/Prestamo:</label>
+             <input class="form-control" name="numTaPre" id="numTaPre" placeholder="Ex: 987654321">
+             <br>
+    			   <label id="labels">Monto:</label>
+    			   <input class="form-control" name="Monto" id="Monto" placeholder="Ex: $1000">
+             <br>
+    			   <label id="labels">Descripcion del Prestamo:</label>
+    			   <input value=""class="form-control" name="descripcionPrestamo" id="descripcionPrestamo" placeholder="Ex: Prestamo concedido para la comprar de un Wii-U">
+             <br>
+             <label id="labels">Limite Tarjeta:</label>
+             <input value="" class="form-control" name="limiteTarjeta" id="limiteTarjeta" placeholder="Ex: 2000000">
+             <br>
+            <label id="labels">Cuotas:</label>
+             <select class="form-control" id="numCuota" name="numCuota">
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              </select>
+             <br>
+          </fieldset>
+          <br><br>
+  				<button type="submit" class="btn btn-default" id="crePrestamo"name="crePrestamo">Aceptar</button>
+			</form>
+      </fieldset>
+
+      <div id="bot">
+      <hr>
+      <img src="ui/Img/bot.png">
+    </div>
+	</div>
+	</div>
+
+  </div>
+</body>
+</html>

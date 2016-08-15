@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+  <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+  <script type="text/javascript" src="ui/js/java.js"></script>
+	<META NAME="Author" CONTENT="P. Steven Puerto Montaño, Juliana Diaz, Felix Moreno">
+	<title>BancaUSA.com</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="ui/CSS/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="ui/CSS/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="ui/js/bootstrap.min.js"></script>
+
+	<!--Icono-->
+	<link rel="SHORTCUT ICON" href="ui\Img\Pestaña.png">
+
+	<!--estilo-->
+	<link rel="stylesheet" type= "text/css" href="ui\CSS\Style2.css">
+	<script type="text/javascript" src="ui/JS/clock.js"></script>
+</head>
+<div id = "head">
+		</div>
+		<div id = "menu">
+			<ul class="nav nav-pills">
+		  		<li role="presentation" class="active"><a><img src="ui/Img/recordar2.png" id="icons">&nbsp Recordar Clave</a></li>
+				<li role="presentation"><a href="index.html"><img src="ui/Img/volver.png" id="icons">&nbsp Volver</a></li>
+				<li role="presentation" id="clockbox"></li>
+			</ul>
+		</div>
+<body>	
+	<div id = "container">
+		<br>
+	<div id="contenido">
+		<form id="recordarClave" role="form"  method="Post" action="UI/php/validar2.php">
+			<frameset>
+				<legend>Recordar Tu Clave</legend>
+				
+					<label id="lc" >Documento de identidad:</label>
+   					<input class="form-control" id="idDoc" name="idDoc" placeholder="Ex: 441320">
+   					<br>
+   					<button type="submit" class="btn btn-default" id="AceptarCambio" name="AceptarCambio"> Aceptar</button><br><br>
+				
+			</frameset>
+		</form>	
+	</div>
+		<div id="bot">
+			<hr>
+			<img src="ui/Img/bot.png">
+		</div>
+	</div>
+</body>
+</html>

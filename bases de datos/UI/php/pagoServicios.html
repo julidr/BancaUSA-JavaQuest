@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+  <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+  <script type="text/javascript" src="UI/JS/java.js"></script>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	<META NAME="Author" CONTENT="P. Steven Puerto Montaño, Juliana Diaz, Felix Moreno">
+	<title>BancaUSA.com</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="UI/CSS/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="UI/CSS/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="ui/js/bootstrap.min.js"></script>
+
+	<!--Icono-->
+	<link rel="SHORTCUT ICON" href="UI\Img\xampp.jpg">
+
+	<!--estilo-->
+	<link rel="stylesheet" type= "text/css" href="UI\CSS\Style.css">
+</head>
+<body>	
+	<div id = "container">
+
+		<div id = "head">
+		</div>
+		<h6>Bienvenido a BancaUSA: <br><br> <p><?php echo $_SESSION['usuario'] ?></p> </h6><br>
+
+		<div id = "menu">
+			<ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a>Pago de Servicios</a></li>
+				  <li role="presentation"><a href="transferencias.html">Salir</a></li>
+			</ul>
+		</div>
+
+	<div id="contenido">
+		<div id="der2.1">
+			<br>
+         <h3 id="titulo">Pago De Servicios</h3>
+        
+         <br>
+         <fieldset id="consign">
+         <form id="serviciosForm" name="serviciosForm"role="form" method="Post">
+          <fieldset>
+            <legend>Pago Servicios</legend>
+    			   <label id="lc" >Numero Cuenta:</label>
+   				   <input class="form-control" id="numeroCuenta" name="numeroCuenta" placeholder="Ex: 1000">
+             <br>
+             	   <label id="lc" >Nombre de la Empresa:</label>
+   				   <input class="form-control" id="nombreEmpresa" name="nombreEmpresa" placeholder="Ex: 1000">
+             <br>
+            	   <label id="lc" >Numero Recibo:</label>
+   				   <input class="form-control" id="numeroRecibo" name="numeroRecibo" placeholder="Ex: 1000">
+             <br>
+    			   <label id="labels">Monto:</label>
+    			   <input class="form-control" id="monto" name="monto" placeholder="Ex: 100000">
+             <br>
+    			   <label id="labels">Fecha:</label>
+    			   <input type="text"class="form-control" id="fechaServicio" name="fechaServicio">
+            
+          </fieldset>
+    
+ 
+          <br><br>
+  				<button type="submit" class="btn btn-default" id="pagoServicio" name="pagoServicio">Pago Servicios</button>
+			</form>
+      </fieldset>
+
+      <div id="bot">
+      <hr>
+      <p>Copyright © 2015. Todos los derechos reservados.</p>
+    </div>
+	</div>
+	</div>
+
+  </div>
+</body>
+</html>

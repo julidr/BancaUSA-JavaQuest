@@ -1,0 +1,113 @@
+<html>
+<head>
+
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+  <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+  <script type="text/javascript" src="ui/js/java.js"></script>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	<META NAME="Author" CONTENT="P. Steven Puerto Montaño, Juliana Diaz, Felix Moreno">
+  <title>BancaUSA.com</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="ui/CSS/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="ui/CSS/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="ui/js/bootstrap.min.js"></script>
+
+  <!--Icono-->
+  <link rel="SHORTCUT ICON" href="ui\Img\Pestaña.png">
+
+  <!--estilo-->
+  <link rel="stylesheet" type= "text/css" href="ui\CSS\Style2.css">
+  <script type="text/javascript" src="ui/JS/clock.js"></script>
+</head>
+<body>	
+      <div id = "head">
+    </div>
+    <div id = "menu">
+      <ul class="nav nav-pills">
+          <li role="presentation" class="active"><a href="crearCliente.html"><img src="ui/Img/cliente.png" id="icons">&nbsp Crear Nuevo Cliente</a></li>
+          <li role="presentation" ><a href="crearCuenta.html"><img src="ui/Img/cuentaCliente2.png" id="icons">&nbsp Crear Cuenta a Cliente Registrado</a></li>
+          <li role="presentation"><a href="indexAdmin.html"><img src="ui/Img/volver.png" id="icons">&nbsp Volver</a></li>
+          <li role="presentation" id="clockbox"></li>
+      </ul>
+    </div>
+	<div id = "container">
+	<div id="contenido">
+		<div id="der2.1">
+			<br>
+         <h3 id="titulo">Crear Cliente</h3>
+         <h4 id="titulo2">Aqui se Crean los Clientes</h4>
+         <br>
+         <fieldset id="crearCliente">
+         <form id="formCrearClie" role="form" method="Post" action="UI/php/crear cliente.php">
+          <fieldset>
+            <legend>Usuario</legend>
+    			   <label id="lc" >Cedula:</label>
+   				   <input class="form-control" id="cedula" name="cedula" placeholder="Ex: 1026293165">
+             <br>
+    			   <label id="labels">Nombre:</label>
+    			   <input class="form-control" id="nombre" name="nombre" placeholder="Ex: Juliana">
+             <br>
+    			   <label id="labels">Apellido:</label>
+    			   <input class="form-control" id="apellido" name="apellido" placeholder="Ex: Diaz">
+             <br>
+    			   <label id="labels">Dirección:</label>
+    			   <input class="form-control" id="direccion" name="direccion" placeholder="Ex: Carrera 69 A #25-35">
+             <br>
+    			   <label id="labels">Telefono:</label>
+    			   <input class="form-control" id="telefono" name="telefono" placeholder="Ex: 6692199">
+             <br>
+    			   <label id="labels">Email:</label>
+    			   <input type="email" class="form-control" id="email" name="email" placeholder="Ex: juli.milena@hotmail.com">
+             <br>
+          </fieldset>
+          <br><br>
+          <fieldset>
+            <legend>Cuenta</legend>
+             <label id="labels">Numero Cuenta:</label>
+             <input class="form-control" id="numeroCuenta" name="numeroCuenta" placeholder="Ex: 1234567890">
+             <br>
+             <label id="labels">Clave Cuenta:</label>
+             <input class="form-control" id="claveCuenta" name="claveCuenta" placeholder="Ex: 123Juliana">
+             <br>
+             <label id="labels">Clave Virtual:</label>
+             <input class="form-control" id="claveVirtual" name="claveVirtual" placeholder="Ex: loveBowserjr">
+             <br>
+             <label id="labels">Saldo:</label>
+            <input  class="form-control" id="saldo" name="saldo" placeholder="Ex: 100000">
+            <br>
+          </fieldset>
+          <br><br>
+          <fieldset>
+            <legend>Preguntas</legend>
+              <label id="labels">Tipo Pregunta:</label>
+              <select class="form-control" id="tipoPre" name="tipoPre">
+              <option value="1">Nombre de su Mascota</option>
+              <option value="2">Lugar de Nacimiento</option>
+              <option value="3">Color Favorito</option>
+              </select>
+              <br>
+              <label id="labels">Respuesta Pregunta:</label>
+              <input  class="form-control" id="resPre" name="resPre" placeholder="Ex: Linda">
+          </fieldset>
+          <br><br>
+  				<button type="submit" class="btn btn-default" id="creCli" name="creCli">Crear</button>
+			</form>
+      </fieldset>
+          <div id="bot">
+              <hr>
+      <img src="ui/Img/bot.png">
+    </div>
+	</div>
+	</div>
+
+  </div>
+</body>
+</html>

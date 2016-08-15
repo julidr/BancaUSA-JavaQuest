@@ -1,0 +1,80 @@
+<html>
+<head>
+
+
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+  <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+  <script type="text/javascript" src="ui/js/java.js"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <META NAME="Author" CONTENT="P. Steven Puerto Montaño, Juliana Diaz, Felix Moreno">
+  <title>BancaUSA.com</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="ui/CSS/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="ui/CSS/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="ui/js/bootstrap.min.js"></script>
+
+  <!--Icono-->
+  <link rel="SHORTCUT ICON" href="ui\Img\Pestaña.png">
+
+  <!--estilo-->
+  <link rel="stylesheet" type= "text/css" href="ui\CSS\Style2.css">
+  <script type="text/javascript" src="ui/JS/clock.js"></script>
+</head>
+<body>  
+   <div id = "head">
+    </div>
+     <div id = "menu">
+      <ul class="nav nav-pills">
+          <li role="presentation"><a href="crearCliente.html"><img src="ui/Img/cliente2.png" id="icons">&nbsp Crear Nuevo Cliente</a></li>
+          <li role="presentation" class="active"><a href="crearCuenta.html"><img src="ui/Img/cuentaCliente.png" id="icons">&nbsp Crear Cuenta a Cliente Registrado</a></li>
+          <li role="presentation"><a href="indexAdmin.html"><img src="ui/Img/volver.png" id="icons">&nbsp Volver</a></li>
+          <li role="presentation" id="clockbox"></li>
+      </ul>
+    </div>
+  <div id = "container">
+     <div id="contenido">
+    <div id="der2.1">
+      <br>
+         <h3 id="titulo">Crear Cuenta a Cliente Registrados</h3>
+         <h4 id="titulo2">Asignacion de cuenta a Clientes Registrados</h4>
+         <br>
+         <fieldset id="crearCuen">
+         <form id="formCrearCuen" role="form" method="Post" action="UI/php/crear cuenta.php">
+
+          <fieldset>
+            <legend>Cuenta</legend>
+             <label id="labels" >Cedula:</label>
+             <input class="form-control" id="cedula" name="cedula" placeholder="Ex: 1026293165">
+             <br>
+             <label id="labels">Numero Cuenta:</label>
+             <input class="form-control" id="numeroCuenta" name="numeroCuenta" placeholder="Ex: 1234567890">
+             <br>
+             <label id="labels">Clave Cuenta:</label>
+             <input class="form-control" id="claveCuenta" name="claveCuenta" placeholder="Ex: 123Juliana">
+             <br>
+             <label id="labels">Saldo:</label>
+            <input  class="form-control" id="saldo" name="saldo" placeholder="Ex: 100000">
+            <br>
+          </fieldset>
+          
+          <br>
+          <button type="submit" class="btn btn-default" id="creCue" name="creCue">Crear</button>
+      </form>
+      </fieldset>
+     <div id="bot">
+              <hr>
+      <img src="ui/Img/bot.png">
+    </div>
+  </div>
+  </div>
+
+  </div>
+</body>
+</html>

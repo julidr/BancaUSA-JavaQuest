@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<META NAME="Author" CONTENT="P. Steven Puerto Montaño, Juliana Diaz, Felix Moreno">
+	<title>BancaUSA.com</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="ui/CSS/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="ui/CSS/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="ui/js/bootstrap.min.js"></script>
+
+	<!--Icono-->
+	<link rel="SHORTCUT ICON" href="ui\Img\Pestaña.png">
+
+	<!--estilo-->
+	<link rel="stylesheet" type= "text/css" href="ui\CSS\Style2.css">
+	<script type="text/javascript" src="ui/JS/clock.js"></script>
+</head>
+<body>	
+	<div id = "head">
+	</div>
+		<div id = "menu">
+			<ul class="nav nav-pills" id="nav">
+		  		<li role="presentation" class="active"><a href="index.html"><img src="ui/Img/inicio.png" id="icons">&nbsp Inicio</a></li>
+		  		<!--<li role="presentation"><a href=""><img src="ui/Img/Cuenta2.png" id="icons">&nbsp Cuentas</a></li>
+				<li role="presentation"><a href=""><img src="ui/Img/who2.png" id="icons">&nbsp ¿Quienes Somos?</a></li>-->
+				<li role="presentation" id="clockbox"></li>
+			</ul>
+		</div>
+	<div id = "container">
+		
+		<div id="contenido">
+			<div id="izq">
+
+				<br>
+         		<div id="info">
+         			<img src="ui/Img/Div Index.png">
+         		</div>
+			</div>
+			<div id="der">
+				<br>
+				<div id="inicioS"><label id="sesion">Iniciar Sesión</label></div>
+				<br>
+				<form role="form" method="Post" action="UI/php/iniciar sesion.php">
+  					<div class="form-group">
+    					<label >Numero de Identificación:</label>
+   						<input class="form-control" id="cedula" name="cedula">
+  					</div>
+  					<div class="form-group">
+    					<label>Clave Virtual:</label>
+    					<input type="password" class="form-control" id="pwd" name="pwd">
+  					</div>
+  					<button type="submit" class="btn btn-default" id="inicioSe" name="inicioSe">Entrar</button><br><br>
+  					<a href="recordarClave.html">Recordar tu Clave</a>
+				</form>
+			</div>
+		</div>
+		<div id="bot">
+			<hr>
+			<img src="ui/Img/bot.png">
+		</div>
+	</div>
+</body>
+</html>
