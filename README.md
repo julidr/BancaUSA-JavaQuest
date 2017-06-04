@@ -9,5 +9,5 @@ En terminos generales la aplicación permite realizar lo siguiente:
 
 ## Colaboradores ##
 - [Steven Puerto](https://github.com/stevenn2012)
-- [Felix Moreno](https://github.com/Felixmorenot17)
+- [Felix Moreno](https://github.com/FelixMorenoT)
 - [Juliana Diaz](https://github.com/julidr)
